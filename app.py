@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, url_for
-import requests
 import pickle
 app= Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
